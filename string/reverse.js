@@ -73,5 +73,5 @@ function findLongestWord(str)
 
     return {longestWord ,secoundLongest}
 }
-
+// lead mention some changes in the pr
 console.log(findLongestWord('hi akash subhash bachute'))
