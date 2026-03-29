@@ -39,3 +39,13 @@ function reverseWordInString(str)
 }
 
 console.log(reverseWordInString('i love india'))
+
+
+function findSecoundMax(str)
+{
+    let words=str.split(' ');
+    let descArray=words.sort((a,b)=>b.length -a.length);
+    return descArray[1]
+}
+
+console.log(findSecoundMax('my name is akash'))
