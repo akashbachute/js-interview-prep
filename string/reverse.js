@@ -49,3 +49,29 @@ function findSecoundMax(str)
 }
 
 console.log(findSecoundMax('my name is akash'))
+
+
+
+function findLongestWord(str)
+{
+    let words=str.split(' ');
+    let longestWord=''
+    let secoundLongest=''
+
+    for(let word of words)
+    {
+        if(word.length > longestWord.length)
+        {    secoundLongest= longestWord
+            longestWord=word
+        }
+
+        else if ( word.length > secoundLongest && word.length !== secoundLongest.length)
+        {
+            secoundLongest=word
+        }
+    }
+
+    return {longestWord ,secoundLongest}
+}
+// lead mention some changes in the pr
+console.log(findLongestWord('hi akash subhash bachute'))
